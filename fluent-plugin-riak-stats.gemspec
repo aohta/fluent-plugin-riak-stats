@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-riak-stats"
   spec.version       = "0.0.1"
-  spec.authors       = ["t"]
+  spec.authors       = ["aohta"]
   spec.email         = [""]
   spec.description   = %q{Riak Stats input plugin for Fluent event collector}
   spec.summary       = %q{Riak Stats input plugin for Fluent event collector}

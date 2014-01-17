@@ -40,16 +40,19 @@ module Fluent
 
     private
     def riak_stats
-      # see. http://docs.basho.com/riak/latest/cookbooks/Statistics-and-Monitoring/
+      # see. http://docs.basho.com/riak/latest/cookbooks/statistics-and-monitoring/
       #   Counters "Gets and Puts" and Riak Metrics To Graph
       m = ["node_gets", "node_gets_total", "node_puts", "node_puts_total",
-           "vnode_gets", "vnode_gets_total", "vnode_puts_total",
-           "node_get_fsm_objsize_mean", "node_get_fsm_objsize_median", "node_get_fsm_objsize_95",
-           "node_get_fsm_objsize_100", "node_get_fsm_time_mean", "node_get_fsm_time_median",
-           "node_get_fsm_time_95", "node_get_fsm_time_100", "node_put_fsm_time_mean",
-           "node_put_fsm_time_median", "node_put_fsm_time_95", "node_put_fsm_time_100",
-           "node_get_fsm_siblings_mean", "node_get_fsm_siblings_median", "node_get_fsm_siblings_95",
-           "node_get_fsm_siblings_100", "memory_processes_used", "read_repairs",
+           "vnode_gets", "vnode_gets_total", "vnode_puts", "vnode_puts_total",
+           "node_get_fsm_objsize_mean", "node_get_fsm_objsize_median",
+           "node_get_fsm_objsize_95", "node_get_fsm_objsize_99", "node_get_fsm_objsize_100",
+           "node_get_fsm_time_mean", "node_get_fsm_time_median",
+           "node_get_fsm_time_95", "node_get_fsm_time_99", "node_get_fsm_time_100",
+           "node_put_fsm_time_mean", "node_put_fsm_time_median",
+           "node_put_fsm_time_95", "node_put_fsm_time_99", "node_put_fsm_time_100",
+           "node_get_fsm_siblings_mean", "node_get_fsm_siblings_median",
+           "node_get_fsm_siblings_95", "node_get_fsm_siblings_99", "node_get_fsm_siblings_100",
+           "memory_processes_used", "read_repairs",
            "read_repairs_total", "sys_process_count", "coord_redirs_total",
            "pbc_connect", "pbc_active"
           ]
