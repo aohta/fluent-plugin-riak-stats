@@ -16,10 +16,10 @@ Riak Stats input plugin for Fluent event collector
 ## Output Format
 
 # Thanks
-shun0102 / fluent-plugin-dstat
-tiwakawa / fluent-plugin-df
+- shun0102 / fluent-plugin-dstat
+- tiwakawa / fluent-plugin-df
 
 # License
-Apache 2.0
-Copyright Akitoshi Ohta
+- Apache 2.0
+- Copyright Akitoshi Ohta
 
