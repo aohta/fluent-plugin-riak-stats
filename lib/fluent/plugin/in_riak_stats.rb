@@ -40,7 +40,7 @@ module Fluent
 
     private
     def riak_stats
-      # see. http://docs.basho.com/riak/latest/cookbooks/statistics-and-monitoring/
+      # see. http://docs.basho.com/riak/latest/ops/running/nodes/inspecting/
       #   Counters "Gets and Puts" and Riak Metrics To Graph
       m = ["node_gets", "node_gets_total", "node_puts", "node_puts_total",
            "vnode_gets", "vnode_gets_total", "vnode_puts", "vnode_puts_total",
@@ -54,7 +54,9 @@ module Fluent
            "node_get_fsm_siblings_95", "node_get_fsm_siblings_99", "node_get_fsm_siblings_100",
            "memory_processes_used", "read_repairs",
            "read_repairs_total", "sys_process_count", "coord_redirs_total",
-           "pbc_connect", "pbc_active"
+           "pbc_connect", "pbc_active",
+           "riak_kv_vnodeq_max", "riak_kv_vnodeq_mean", "riak_kv_vnodeq_median",
+           "riak_kv_vnodeq_min", "riak_kv_vnodeq_total", "riak_kv_vnodes_running"
           ]
       response = Net::HTTP.get_response(@bind, "/stats", @port)
       stats = response.body
